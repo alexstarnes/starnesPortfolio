@@ -1,6 +1,22 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Lato-Light', sans-serif;
+    color: #3C3C3B;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.maxWidthWrapper {
+    max-width: 1600px;
+    display: flex;
+    margin: auto;
 }
 
 body {
@@ -59,7 +75,7 @@ body {
 }
 
 .navOptions:hover {
-  background-color: lightgray;
+  background-color: #EEEEF0;
   cursor: pointer;
 }
 
@@ -67,7 +83,6 @@ body {
 	background-image: url(https://source.unsplash.com/lWBZ01XRRoI);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color: lightblue;
 	width: 100vw;
     height: 100vh;
 	position: fixed;
@@ -82,7 +97,7 @@ body {
     height: 40px;
     background-image: url(./images/arrow_downward-24px.svg);
     background-repeat: no-repeat;
-    background-color: lightgray;
+    background-color: #E5E5E8;
     background-position: center center;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     border-radius: 50%;
@@ -96,6 +111,12 @@ body {
     animation-iteration-count: infinite;
 }
 
+.downArrow:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    animation-play-state: paused;
+}
+
 .intro {
 	height: 100vh;
 	margin: 0 10vw;
@@ -103,7 +124,6 @@ body {
 
 .bio {
     display: flex;
-/*    align-items: center;*/
     position: relative;
     top: 12vh;
 }
@@ -142,7 +162,7 @@ body {
 }
 
 #photoSection {
-	background-color: lightgray;
+	background-color: #A0A0A0;
 }
 
 .contentWrapper {
@@ -159,16 +179,17 @@ body {
 .photo {
     width: 300px;
     height: 200px;
-    background-color: lightslategray;
+    background-color: #E5E5E8;
     margin: 10px;
 }
 
 .sectionDescription {
 	background-color: white;
 	width: 35vw;
-	height: calc(100vh - 50px);
+    max-width: 500px;
+	height: 70vh;
 	position: sticky;
-	top: 50px;
+	top: 15vh;
 }
 
 .sectionTitle {
@@ -183,7 +204,7 @@ body {
 }
 
 #pdSection {
-	background-color: lightpink;
+	background-color: #E5E5E8;
 }
 
 .pdContent {
@@ -200,7 +221,7 @@ body {
 .caseStudyPhoto {
     width: 600px;
     height: 400px;
-    background-color: lightslategray;
+    background-color: #6B6B6B;
 }
 
 .caseStudyInfo {
@@ -213,8 +234,8 @@ body {
 .footer {
     opacity: 0;
     position: fixed;
-    top: calc(100vh - 200px);
-    right: 0;
+    top: calc(100vh - 165px);
+    right: 20px;
 	display: flex;
     flex-direction: column;
 	justify-content: center;
@@ -224,23 +245,43 @@ body {
 .socialIcons {
 	height: 40px;
 	width: 40px;
-	border-radius: 50%;
-	background-color: lightblue;
-	margin: 10px;
+/*	border-radius: 50%;*/
+	margin: 5px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+/*    background-color: white;*/
+/*    box-shadow: 0px 2px 4px rgba(, 0, 0, 0.3);*/
 	transition: all 0.2s ease-in;
+    mix-blend-mode: exclusion;
+}
+
+.dribbble {
+    background-image: url(./images/dribbble-ball-mark.svg);
+	border-radius: 50%;
+}
+
+.medium {
+    background-image: url(./images/MediumMonogram.svg);
+	border-radius: 50%;
+}
+
+.instagram {
+    background-image: url(./images/IG_Glyph_Fill.svg);
+    border-radius: 50%;
 }
 
 .socialIcons:hover {
-	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
 	cursor: pointer;
 	user-select: none;
 }
 
 
 @keyframes bounce {
-    from {transform: translateY(0);}
-    to {transform: translateY(10px);}
+    from {transform: translateY(5px);}
+    to {transform: translateY(-15px);}
 }
