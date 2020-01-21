@@ -80,7 +80,7 @@ body {
 }
 
 .hero {
-	background-image: url(https://source.unsplash.com/lWBZ01XRRoI);
+	background-image: url(./images/hero.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100vw;
@@ -124,8 +124,9 @@ body {
 
 .bio {
     display: flex;
-    position: relative;
-    top: 12vh;
+    position: sticky;
+    top: 14vh;
+    margin-bottom: 12vh;
 }
 
 .picture {
@@ -162,7 +163,7 @@ body {
 }
 
 #photoSection {
-	background-color: #A0A0A0;
+	background-color: #BBBBBB;
 }
 
 .contentWrapper {
@@ -215,7 +216,7 @@ body {
 }
 
 .caseStudy {
-    margin: 40px;
+    margin: 20px 40px;
 }
 
 .caseStudyPhoto {
@@ -234,7 +235,7 @@ body {
 .footer {
     opacity: 0;
     position: fixed;
-    top: calc(100vh - 165px);
+    top: calc(100vh - 170px);
     right: 20px;
 	display: flex;
     flex-direction: column;
@@ -253,25 +254,20 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
-/*    background-color: white;*/
-/*    box-shadow: 0px 2px 4px rgba(, 0, 0, 0.3);*/
+    border-radius: 50%;
 	transition: all 0.2s ease-in;
-    mix-blend-mode: exclusion;
 }
 
 .dribbble {
     background-image: url(./images/dribbble-ball-mark.svg);
-	border-radius: 50%;
 }
 
 .medium {
     background-image: url(./images/MediumMonogram.svg);
-	border-radius: 50%;
 }
 
 .instagram {
     background-image: url(./images/IG_Glyph_Fill.svg);
-    border-radius: 50%;
 }
 
 .socialIcons:hover {
