@@ -6,6 +6,9 @@ body {
     margin: 0;
     font-family: 'Lato-Light', sans-serif;
     color: #3C3C3B;
+    font-size: 16px;
+    background-color: white;
+    line-height: 20px;
 }
 
 a {
@@ -17,12 +20,6 @@ a {
     max-width: 1600px;
     display: flex;
     margin: auto;
-}
-
-body {
-  margin: 0;
-  background-color: white;
-  line-height: 20px;
 }
 
 #splash {
@@ -44,12 +41,12 @@ body {
 }
 
 .topNavbar {
-  background-color: white;
   display: flex;
   width: 100vw;
   justify-content: space-between;
+  transition: all 0.3s ease-in;
   position: fixed;
-	z-index: 100;
+  z-index: 100;
 }
 
 .logo {
@@ -69,13 +66,14 @@ body {
   padding: 10px;
   margin: 5px;
   border-radius: 5px;
-    user-select: none;
+  user-select: none;
   transition: all 0.2s ease-in;
   
 }
 
 .navOptions:hover {
-  background-color: #EEEEF0;
+  background-color: #828282;
+  color: white;
   cursor: pointer;
 }
 
@@ -83,6 +81,7 @@ body {
 	background-image: url(./images/hero.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+    background-position: center center;
 	width: 100vw;
     height: 100vh;
 	position: fixed;
@@ -124,6 +123,7 @@ body {
 
 .bio {
     display: flex;
+    position: -webkit-sticky;
     position: sticky;
     top: 14vh;
     margin-bottom: 12vh;
@@ -154,6 +154,43 @@ body {
 .description {
 	font-size: 24px;
 	line-height: 30px;
+}
+
+.actionCalls {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.seeWork {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px;
+    background-color: #E5E5E8;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0, 0.2);
+    margin-right: 20px;
+	transition: all 0.2s ease-in;
+}
+
+.seeWork:hover {
+    box-shadow: 0 2px 6px rgba(0,0,0, 0.6);
+    cursor: pointer;
+    user-select: none;
+}
+
+.resume {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px;
+    border-radius: 5px;
+	transition: all 0.2s ease-in;
+}
+
+.resume:hover {
+  background-color: #828282;
+  color: white;
+  cursor: pointer;
 }
 
 .portfolioSection {
@@ -189,6 +226,7 @@ body {
 	width: 35vw;
     max-width: 500px;
 	height: 70vh;
+    position: -webkit-sticky;
 	position: sticky;
 	top: 15vh;
 }
