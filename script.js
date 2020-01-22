@@ -4,14 +4,21 @@
 
 window.onload = function () {
 document.getElementById("splash").style.opacity = 1;
-var photoSectionID = document.getElementById("photoSection");
-var photSectDescID = document.getElementById("photoSectionDesc"); 
+var firstNameID = document.getElementById("firstName");
+var lastNameID = document.getElementById("lastName");
 window.scrollTo(0, 0);
     
 setTimeout(function() {
   document.getElementById("splash").style.display = "none";
   document.getElementById("header").style.opacity = 1;
 }, 2500);
+    
+setTimeout(function() {
+  
+  lastNameID.style.marginLeft = "10px";
+  firstNameID.style.opacity = 1;
+    
+}, 5000);    
     
 }
 
