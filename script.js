@@ -3,6 +3,21 @@
 //}
 
 window.onload = function () {
+    var i;
+    var photoContent = document.getElementById("photoContent");
+    for (i=1; i< 5; i++) {
+
+        var imageString = "url('./static/photo" + i + ".JPG')";
+
+        var newDiv = document.createElement("div");
+
+        newDiv.classList.add("photo");
+
+        newDiv.style.backgroundImage = imageString;
+
+        photoContent.appendChild(newDiv);
+
+    }
 document.getElementById("splash").style.opacity = 1;
 var firstNameID = document.getElementById("firstName");
 var lastNameID = document.getElementById("lastName");
@@ -20,21 +35,6 @@ setTimeout(function() {
     
 }, 4000);    
    
-    var i;
-    var photoContent = document.getElementById("photoContent");
-    for (i=1; i< 5; i++) {
-        
-        var imageString = "url('./static/photo" + i + ".JPG')";
-    
-        var newDiv = document.createElement("div");
-
-        newDiv.classList.add("photo");
-
-        newDiv.style.backgroundImage = imageString;
-
-        photoContent.appendChild(newDiv);
-
-    }
     
 }
 
