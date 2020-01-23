@@ -7,13 +7,13 @@ window.onload = function () {
     var photoContent = document.getElementById("photoContent");
     for (i=1; i< 5; i++) {
 
-        var imageString = "url('./static/photo" + i + ".JPG')";
+        var imageString = "./static/photo" + i + ".JPG";
 
-        var newDiv = document.createElement("div");
+        var newDiv = document.createElement("IMG");
 
         newDiv.classList.add("photo");
 
-        newDiv.style.backgroundImage = imageString;
+        newDiv.src = imageString;
 
         photoContent.appendChild(newDiv);
 
