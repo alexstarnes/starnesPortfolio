@@ -17,9 +17,11 @@ a {
 }
 
 .maxWidthWrapper {
+    width: 100vw;
     max-width: 1600px;
     display: flex;
-    margin: auto;
+    justify-content: center;
+    margin:  0 auto;
 }
 
 #splash {
@@ -44,9 +46,17 @@ a {
   display: flex;
   width: 100vw;
   justify-content: space-between;
+  align-items: center;
   transition: all 0.3s ease-in;
   position: fixed;
   z-index: 100;
+}
+
+.navContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in;
 }
 
 .logo {
@@ -57,6 +67,19 @@ a {
   background-image: url(./images/starnesLogo.svg);
   background-size: contain;
   background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.menu {
+  display: none;
+  width: 24px;
+  height: 24px;
+  margin: 5px;
+  cursor: pointer;
+  background-image: url(./images/menuIcon.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .pageNavigation {
@@ -89,7 +112,7 @@ a {
     background-position: center center;
 	width: 100vw;
     height: 100vh;
-	position: fixed;
+	position: absolute;
 	z-index: -1;
 	display:flex;
 	align-items: center;
@@ -128,6 +151,7 @@ a {
 
 .bio {
     display: flex;
+    flex-direction: row;
     position: -webkit-sticky;
     position: sticky;
     top: 14vh;
@@ -157,12 +181,12 @@ a {
 
 .firstName {
     opacity: 0;
-    transition: all 0.8s ease-in;
+    transition: all 1s ease-in;
 }
 
 .lastName {
     margin-left: -67px;
-    transition: all 0.5s ease-in;
+    transition: all 0.6s ease-in;
 }
 
 .name {
@@ -177,7 +201,7 @@ a {
 
 .actionCalls {
     display: flex;
-    margin-top: 20px;
+    margin-top: 30px;
     justify-content: center;
 }
 
@@ -213,7 +237,7 @@ a {
 }
 
 .portfolioSection {
-	min-height: 150vh;
+    width: 100vw;
     z-index: 1;
     display: flex;
 }
@@ -222,11 +246,32 @@ a {
 	background-color: #BBBBBB;
 }
 
-.contentWrapper {
-    width: 65vw;
+.sectionDescription {
+	background-color: white;
+	width: 40vw;
+    height: 160px;
+    position: -webkit-sticky;
+	position: sticky;
+	top: calc(50vh - 100px);
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionTitle {
+	font-size: 40px;
+	line-height: 50px;
+    margin: 30px auto 0px;
+}
+
+.sectionSubTitle {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 10px auto 30px;  
 }
 
 .photoContent {
+    width: 60vw;
+    max-width: calc(1600px * 0.65);
     margin: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -234,45 +279,36 @@ a {
 }
 
 .photo {
-    width: 300px;
-    height: 200px;
-    background-color: #E5E5E8;
+    width: 50vw;
+    height: calc(50vw * 2/3);
+    background-size: contain;
+    background-repeat: no-repeat;
+    image-orientation: 0deg;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     margin: 10px;
 }
 
-.sectionDescription {
-	background-color: white;
-	width: 35vw;
-    max-width: 500px;
-	height: 70vh;
-    position: -webkit-sticky;
-	position: sticky;
-	top: 15vh;
-}
-
-.sectionTitle {
-	box-sizing: border-box;
-	font-size: 40px;
-	line-height: 50px;
-	width: 100%;
-	display: flex;
-	justify-content: center;	
-	position: relative;
-	top: 40px;
-}
 
 #pdSection {
 	background-color: #E5E5E8;
 }
 
 .pdContent {
+    width: 60vw;
+    max-width: calc(1600px * 0.65);
     margin: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+.helpMe {
+
+}
+
 .caseStudy {
+    display: flex;
+    flex-direction: column;
     margin: 20px 40px;
 }
 
@@ -290,10 +326,18 @@ a {
 }
 
 .footer {
+    height: 60px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
     opacity: 0;
     position: fixed;
-    top: calc(100vh - 170px);
-    right: 20px;
+    top: calc(100vh - 220px);
+    right: 5px;
 	display: flex;
     flex-direction: column;
 	justify-content: center;
@@ -303,7 +347,6 @@ a {
 .socialIcons {
 	height: 40px;
 	width: 40px;
-/*	border-radius: 50%;*/
 	margin: 5px;
 	display: flex;
 	justify-content: center;
@@ -333,8 +376,70 @@ a {
 	user-select: none;
 }
 
-
 @keyframes bounce {
     from {transform: translateY(5px);}
     to {transform: translateY(-15px);}
 }
+
+
+@media only screen and (max-width: 760px){
+    
+    .navContent {
+        width: calc(50vw + 25px);
+        flex-direction: row-reverse;
+    }
+    
+    .pageNavigation {
+        display: none;
+    }
+    
+    .downArrow {
+        top: calc(100vh - 100px);
+    }
+    
+    .bio {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .picture {
+        width: 200px;
+        height: 200px;
+        margin-right: 0;
+    }
+    
+    .introText {
+        margin-top: 30px;   
+    }
+    
+    .description {
+        margin-top: 10px;
+    }
+    
+    .maxWidthWrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .sectionDescription { 
+        position: relative;
+        top: 0;
+        width: 100%;
+        max-width: none;
+    }
+    
+    .photoContent {
+        width: unset;
+    }
+    
+    .photo {
+        width: 85vw;
+        height: calc(85vw * 2/3);
+    }
+    
+    .social {
+        display: none;
+    }
+}
+

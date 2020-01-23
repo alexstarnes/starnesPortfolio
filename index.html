@@ -7,8 +7,8 @@
     <meta name="author" content="">
     <meta property="og:title" content="starnes. photographer | ux designer">
     <meta property="og:image" content="./images/nameSplash.jpg">
-    <link rel="icon" href="./images/starnesIconNew.svg" type="image/x-icon" />
-    <link rel="shortcut icon" href="./images/starnesIconNew.svg" type="image/x-icon" />
+    <link rel="icon" href="./images/starnesIcon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/starnesIcon.svg" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
 
     <title>starnes. photographer | ux designer</title>
@@ -24,17 +24,20 @@
 <div id="header" class="wrapper">
 
   <div id="topNavBar" class="topNavbar">
-    <a href="index.html" class="logo"></a>
+      <div class="navContent">
+        <a href="index.html" class="logo"></a>
+        <a class="menu"></a>
+      </div>
     <div class="pageNavigation">
       <a href="#header" class="navOptions">Home</a>
       <a href="#photoSection" class="navOptions">Photography</a>
-      <a href="#pdSection" class="navOptions">Product Design</a>
+<!--      <a href="#pdSection" class="navOptions">Product Design</a>-->
     </div>
   </div>
 
   <div class="hero"></div>
   <a href="#photoSection" id="arrow" class="downArrow"></a>
-    <div class="maxWidthWrapper">
+  <div class="maxWidthWrapper">
       <div class="intro">
           <div class="bio">
             <div class="picture"></div>
@@ -46,7 +49,7 @@
                 <div class="description">an engineer with an eye for design and a passion for problem solving.</div>
                   <div class="actionCalls">
                   <a href="#photoSection" class="seeWork">see my work</a>
-                  <a href="./images/StarnesDesignResume.pdf" target="_blanks" class="resume">see my resume</a>
+                  <a href="./images/StarnesDesignResume.pdf" target="_blanks" class="resume"> my resume</a>
                   </div>
               </div>
           </div>
@@ -56,68 +59,23 @@
       <div class="maxWidthWrapper">
         <div id="photoSectionDesc" class="sectionDescription">
           <div class="sectionTitle">Photography</div>
+          <div class="sectionSubTitle">i like to travel and take pictures.</div>
         </div>
-        <div class="contentWrapper">
-            <div class="photoContent">
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
+            <div id="photoContent" class="photoContent">
+
             </div>
-        </div>
       </div>
   </div>
-  <div id="pdSection" class="portfolioSection">
-      <div class="maxWidthWrapper">
-        <div id="pdSectionDesc" class="sectionDescription">
-          <div class="sectionTitle">Product Design</div>
-        </div>
-        <div class="contentWrapper">
-
-            <div class="pdContent">
-                <div class="caseStudy">
-                    <div class="caseStudyPhoto"></div>
-                    <div class="caseStudyInfo">ux case study #1</div>
-                </div>
-
-                <div class="caseStudy">
-                    <div class="caseStudyPhoto"></div>
-                    <div class="caseStudyInfo"> ux case study #2</div>
-                </div>
-
-                <div class="caseStudy">
-                    <div class="caseStudyPhoto"></div>
-                    <div class="caseStudyInfo">ux case study #3</div>
-                </div>
-            </div>  
-        </div>
-      </div>
-
-  </div>
-  <div id="footer" class="footer">
+    
+  <div id="social" class="social">
     <a href="https://www.instagram.com/starnescam/" target="_blank" class="socialIcons instagram"></a>
     <a href="https://medium.com/@alex.starnes" target="_blank" class="socialIcons medium"></a>
     <a href="https://dribbble.com/astarnes" target="_blank" class="socialIcons dribbble"></a>
   </div>
+    
 </div>
 
+    <div class="footer">&copy; 2019 alex starnes - alexstarnes.com</div>
     
     <script src="./script.js"></script>
     
