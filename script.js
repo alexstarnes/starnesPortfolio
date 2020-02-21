@@ -79,10 +79,7 @@ function openFilePopup() {
     
 var windowWidth = window.innerWidth;
     
-    if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
-        window.open(url, '_blank');
-    }
-    else if (windowWidth < 760) {
+    if (windowWidth < 760) {
         popupBackground.style.opacity = '1';
         popupBackground.style.zIndex = '90';
         popupOverlay.style.top = '0';
