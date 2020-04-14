@@ -1,14 +1,5 @@
 <!doctype html>
 <html lang="en">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156819181-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-156819181-1');
-</script>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,83 +9,84 @@
     <meta property="og:video" content="./images/starnes.mov">
     <link rel="icon" href="./images/starnesIcon.png" type="image/x-icon" />
     <link rel="shortcut icon" href="./images/starnesIcon.png" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600" rel="stylesheet">
 
-    <title>starnes. photographer | ux designer</title>
-    
+    <title>starnes. product designer | photographer</title>
+
     <!-- Custom styles for this template -->
     <link href="index.css" rel="stylesheet">
-    
-    <script>window.scrollTo(0,0);</script>
 
 </head> 
 <body>
-<div id="splash">welcome.</div>
-<div id="header" class="wrapper">
-
-  <div id="topNavBar" class="topNavbar">
-      <div class="navContent">
-        <a href="./" class="logo"></a>
-        <a class="menu"></a>
-      </div>
-    <div class="pageNavigation">
-      <a href="#header" class="navOptions">home</a>
-      <a href="#photoSection" class="navOptions">photography</a>
-<!--      <a href="#pdSection" class="navOptions">Product Design</a>-->
-    </div>
-  </div>
-
-  <div id="hero" class="hero"></div>
-    <div onclick="closeFilePopup();" id="popupBackground" class="popupBackground"></div>
-    <div id="popupOverlay" class="popupOverlay">
-        <div class="popupOverlayNav">
-            <div onclick="closeFilePopup();" class="closeIcon"></div>
+    <nav id="topNavBar" class="navbar">
+        <div class="navMaxWidth">
+            <a id="logo" href="./" class="logo"></a>
+<!--            <a id="menu" class="menu"></a>-->
         </div>
-        <iframe id="popupIframe" src="" class="popupIframe"></iframe>
-    </div>
-  <a href="#photoSection" id="arrow" class="downArrow"></a>
-  <div class="maxWidthWrapper">
-            <div class="intro">
-                <div class="bio">
-                    <div class="picture"></div>
-                    <div class="introText">
-                        <div class="nameFun">
-                            <div id="firstName" class="name firstName">alex</div>
-                            <div id="lastName" class="name lastName">starnes.</div>
-                        </div>
-                        <div class="description">an engineer and product designer by day and a travel photographer on the weekends.
-                        </div>
-                        <div class="actionCalls">
-                            <a href="#photoSection " class="seeWork">see my work</a>
-                            <a onclick="openFilePopup('./resume.pdf');" class="resume">my resume</a>
-                        </div>
-                    </div>
+    </nav>
+    <header>
+        <div class="blueBar"></div>
+        <div class="intro">
+            <div class="picture"></div>
+            <div class="introTextWrapper">
+                <div class="helloText">hi, i'm alex starnes</div>
+                <div class="introText">a chicago-based product designer and photographer with an eye for design and a passion for problem solving.</div>
+            </div>
+            
+        </div>
+    </header>
+    <div class="mainSection">
+    
+        <div class="about subSection">
+        
+            <div class="sectionTitle"> about me</div>
+            <div class="sectionText">a computer engineer who found  what he loves to do at the intersection of people and technology. i find that i truly come alive when working on the toughest of problems where i get to learn how to apply advanced technologies such as virtual reality and machine learning in a human-centered way. 
+            </div>
+            <div class="sectionText">in my free time i also love to travel the world and take pictures. photography was where i first felt how powerful mixing creativity with technology could be and i haven’t looked back since.</div>
+            <div class="sectionText">check out some of my work below.</div>
+            
+        </div>
+        
+        <div class="portfolio">
+        
+            <div class="sectionTitle subSection">my porfolio</div>
+            <div class="portfolioWrapper">
+            
+                <div class="workWrapper">
+                
+                    <div class="image productImage"></div>
+                    <div class="workText">product design</div>
+                    
                 </div>
+                <div class="workWrapper">
+                
+                    <div class="image photographyImage"></div>
+                    <div class="workText">photography</div>
+                    
+                </div>
+            
             </div>
+            
         </div>
-  <div id="photoSection" class="portfolioSection">
-      <div class="maxWidthWrapper">
-        <div id="photoSectionDesc" class="sectionDescription">
-          <div class="sectionTitle">Photography</div>
-          <div class="sectionSubTitle">i like to travel and take pictures.</div>
-        </div>
-            <div id="photoContent" class="photoContent">
-
+        
+        <div class="contact subSection">
+        
+            <div class="sectionTitle">contact me</div>
+            <div class="sectionText">want to learn more about me and my work?  shoot me an email or find me on social media :)</div>
+            <div class="socialIconWrapper">
+            
+                <a href="mailto:alex.starnes@gmail.com?subject=Hey Alex, Let's Chat" target="_blank" class="socialIcons email"></a>
+                <a href="https://www.linkedin.com/in/alex-starnes/" target="_blank" class="socialIcons linkedin"></a>
+                <a href="https://dribbble.com/astarnes" target="_blank" class="socialIcons dribbble"></a>
+                <a href="https://medium.com/@alex.starnes" target="_blank" class="socialIcons medium"></a>
+            
             </div>
-      </div>
-  </div>
+        
+        </div>
     
-  <div id="social" class="social">
-    <a href="https://www.linkedin.com/in/alex-starnes/" target="_blank" class="socialIcons linkedin"></a>
-    <a href="https://medium.com/@alex.starnes" target="_blank" class="socialIcons medium"></a>
-    <a href="https://dribbble.com/astarnes" target="_blank" class="socialIcons dribbble"></a>
-  </div>
+    </div>
+    <div class="sectionText copyright">&copy; 2020 alex starnes - alexstarnes.com</div>
     
-</div>
-
-    <div class="footer">&copy; 2019 alex starnes - alexstarnes.com</div>
-    
-    <script src="./script.js"></script>
-    
+     <script src="./script.js"></script>
 </body>
 </html>
