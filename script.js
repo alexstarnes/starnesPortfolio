@@ -1,8 +1,6 @@
 window.onload = function () {
     
-    setTimeout(function() {
-        document.getElementById("splash").style.opacity = "0";
-    }, 200);
+    document.getElementById("splash").style.opacity = "0";
     
     setTimeout(function() {
         document.getElementById("splash").style.display = "none";
