@@ -9,6 +9,19 @@ body {
     width: 100%;
 }
 
+#splash {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-size: 40px;
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
 .navbar {
     position: fixed;
     z-index: 100;

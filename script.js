@@ -1,3 +1,16 @@
+window.onload = function () {
+    
+    setTimeout(function() {
+        document.getElementById("splash").style.opacity = "0";
+    }, 1000);
+    
+    setTimeout(function() {
+        document.getElementById("splash").style.display = "none";
+    }, 2000);
+    
+}
+
+
 window.onscroll = function() {myFunction()};
 
 var menu = document.getElementById("menu");
