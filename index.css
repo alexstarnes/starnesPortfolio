@@ -7,10 +7,16 @@ body {
     font-family: 'Lato', sans-serif;
     color: #363732;
     width: 100%;
+    height: 100%;
+}
+
+iframe {
+    border: none;
 }
 
 #splash {
   position: fixed;
+  z-index: 99;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -20,6 +26,73 @@ body {
   font-size: 40px;
   opacity: 1;
   transition: opacity 1s ease-in;
+}
+
+.popupOverlay {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 200;
+    top: 105vh;
+    box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.6);
+    transition: top 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popupOverlayNav {
+    position: absolute;
+    top: 0;
+    background-color: white;
+/*    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);*/
+    height: 60px;
+    width: 100%;
+    z-index: 101;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+.closeOverlayIcon {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  cursor: pointer;
+  background-image: url(./images/closeIcon.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease-in;  
+}
+
+.popupIframe{
+    width: 100%;
+    height: 120vw;
+    max-height: 650px;
+    background-color: white;
+}
+
+.constructionButton {
+/*    width: 250px;*/
+    font-size: 28px;
+    line-height: 30px;
+    color: white;
+    background-color: #226CE0;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px 0 rgba(55, 54, 50, 0.25);
+    transition: all 0.2s ease-in;
+    
+}
+
+.constructionButton:hover {
+    cursor: pointer;
+    box-shadow: 0 0 15px 0 rgba(55, 54, 50, 0.5);   
 }
 
 .navbar {
@@ -54,7 +127,7 @@ body {
     
 }
 
-.menu {
+.menuIcon {
   width: 30px;
   height: 30px;
   margin: 10px;
@@ -65,6 +138,55 @@ body {
   background-repeat: no-repeat;
     transition: all 0.2s ease-in;
   
+}
+
+.closeIcon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  cursor: pointer;
+  background-image: url(./images/closeIcon.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease-in;  
+}
+
+.dropMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 0 auto;
+    background-color: white;
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    top: -120vh;
+    box-shadow: 0 0 20px 0 rgba(54, 55, 50, 0.75);
+    transition: all 0.2s ease-in;
+}
+
+.menuItem {
+/*    width: 200px;*/
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    padding: 10px;
+    margin: 5px;   
+    box-sizing: border-box;
+    border-bottom: solid 2px #fff;
+    
+}
+
+.menuItem:hover {
+    cursor: pointer;
+    border-bottom: solid 2px #226CE0;
 }
 
 .blueBar {
@@ -82,7 +204,7 @@ body {
     flex-direction: column;
     align-items: center;
     transition: all 0.2s ease-in;
-    
+   
 }
 
 .picture {
@@ -186,8 +308,8 @@ body {
 }
 
 .image:hover {
-/*    opacity: 0.75;*/
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .productImage {
@@ -268,6 +390,10 @@ body {
     
     .helloText {
         margin: 20px 40px 0px;
+    }
+    
+    .dropMenu {
+        height: 400px;
     }
     
 }

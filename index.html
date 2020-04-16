@@ -28,11 +28,24 @@
 </head> 
 <body>
     <div id="splash"></div>
+    <div id="popupOverlay" class="popupOverlay">
+        <div class="popupOverlayNav">
+            <div onclick="toggleOverlay('');" class="closeOverlayIcon"></div>
+        </div>
+        <iframe id="popupIframe" src="" class="popupIframe"></iframe>
+        <a class="constructionButton" onclick="toggleOverlay('');">head back</a>
+    </div>
     <nav id="topNavBar" class="navbar">
         <div class="navMaxWidth">
             <a id="logo" href="./" class="logo"></a>
-<!--            <a id="menu" class="menu"></a>-->
+<!--            <a id="menuIcon" onclick="toggleMenu();" class="menuIcon"></a>-->
         </div>
+    <div id="dropMenu" class="dropMenu">
+        <a onclick="toggleMenu();" class="closeIcon"></a>
+        <a class="menuItem" onclick="toggleOverlay('./construction.html');">product design</a>
+        <a class="menuItem" onclick="toggleOverlay('./construction.html');">photography</a>
+        <a class="menuItem" onclick="toggleOverlay('./resume.pdf');">resume</a>
+      </div>
     </nav>
     <header>
         <div class="blueBar"></div>
@@ -64,13 +77,13 @@
             
                 <div class="workWrapper">
                 
-                    <div class="image productImage"></div>
+                    <div onclick="toggleOverlay('./construction.html');" class="image productImage"></div>
                     <div class="workText">product design</div>
                     
                 </div>
                 <div class="workWrapper">
                 
-                    <div class="image photographyImage"></div>
+                    <div onclick="toggleOverlay('./construction.html');" class="image photographyImage"></div>
                     <div class="workText">photography</div>
                     
                 </div>

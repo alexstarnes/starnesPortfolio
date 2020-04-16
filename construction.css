@@ -1,0 +1,38 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #363732;
+    width: 100%;
+}
+
+.iframeBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+/*    margin-top: -60px;*/
+}
+
+.constructionHero {
+    width: 75vw;
+    height: 50vw;
+    max-height: 500px;
+    margin: 40px auto;
+    background-image: url(./images/construction.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-color: white;
+    opacity: 0.75;
+}
+
+.constructionText {
+    font-size: 40px;
+    line-height: 50px;
+    opacity: 0.75;
+    text-align: center;
+}
