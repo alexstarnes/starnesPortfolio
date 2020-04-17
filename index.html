@@ -12,13 +12,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Alex Starnes's web portfolio to showcase product design photography work">
+    <meta name="author" content="Alex Starnes">
     <meta property="og:title" content="starnes. prouct designer | photographer">
     <meta property="og:video" content="./images/starnes.mov">
     <link rel="icon" href="./images/starnesIcon.png" type="image/x-icon" />
     <link rel="shortcut icon" href="./images/starnesIcon.png" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <title>starnes. product designer | photographer</title>
 
@@ -98,10 +99,10 @@
             <div class="sectionText">want to learn more about me and my work?  shoot me an email or find me on social media :)</div>
             <div class="socialIconWrapper">
             
-                <a href="mailto:alex.starnes@gmail.com?subject=Hey Alex, Let's Chat" target="_blank" class="socialIcons email"></a>
-                <a href="https://www.linkedin.com/in/alex-starnes/" target="_blank" class="socialIcons linkedin"></a>
-                <a href="https://dribbble.com/astarnes" target="_blank" class="socialIcons dribbble"></a>
-                <a href="https://medium.com/@alex.starnes" target="_blank" class="socialIcons medium"></a>
+                <a href="mailto:alex.starnes@gmail.com?subject=Hey Alex, Let's Chat" target="_blank" rel="noopener" class="socialIcons email"></a>
+                <a href="https://www.linkedin.com/in/alex-starnes/" target="_blank" rel="noopener" class="socialIcons linkedin"></a>
+                <a href="https://dribbble.com/astarnes" target="_blank" rel="noopener" class="socialIcons dribbble"></a>
+                <a href="https://medium.com/@alex.starnes" target="_blank" rel="noopener" class="socialIcons medium"></a>
             
             </div>
         
@@ -111,5 +112,25 @@
     <div class="sectionText copyright">&copy; 2020 alex starnes - alexstarnes.com</div>
     
      <script src="./script.js"></script>
+    <script type="text/javascript"> 
+        jQuery(document).ready(function(){
+            jQuery('.productImage').on('click', function() {
+            ga('send', 'event', 'Portfolio', 'click', 'PD Button');
+            });
+            jQuery('.photographyImage').on('click', function() {
+            ga('send', 'event', 'Portfolio', 'click', 'Photo Button');
+            });
+            jQuery('.linkedin').on('click', function() {
+            ga('send', 'event', 'Social Media', 'click', 'linkedin');
+            });
+            jQuery('.dribbble').on('click', function() {
+            ga('send', 'event', 'Social Media', 'click', 'dribbble');
+            });
+            jQuery('.medium').on('click', function() {
+            ga('send', 'event', 'Social Media', 'click', 'medium');
+            });
+            
+        });
+    </script>
 </body>
 </html>
