@@ -275,6 +275,51 @@ iframe {
     margin-bottom: 0;
 }
 
+.skills {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    
+}
+
+.skillsSection {
+    display: flex;
+    flex-direction: column;  
+}
+
+.skillsSection:not(:first-child){
+    margin-top: 20px;
+}
+
+.skillItemTopic {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.skillsList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skillItem {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.skillItem:nth-child(odd) {
+    width: 50%;
+    margin-right: 5%;
+}
+
+.skillItem:nth-child(even) {
+    width: 45%;
+}
+
 .portfolio {
     width: 100%;
     display: flex;
@@ -396,6 +441,26 @@ iframe {
         height: 400px;
     }
     
+    .skills {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: none;
+    }
+    
+    .skillsSection:not(:first-child){
+        margin-top: 0px;
+    }
+    
+    .skillsList {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    
+    .skillItem:nth-child(odd), .skillItem:nth-child(even) {
+        width: auto;
+        margin-right: 0;
+    }
+    
 }
 
 @media only screen and (min-width: 900px){
@@ -434,9 +499,20 @@ iframe {
     }
     
     .sectionText {
-        font-size: 22px;
+        font-size: 24px;
         line-height: 30px;
         margin: 40px 0;
+    }
+    
+    .skills {
+        margin-top: 20px;
+    }
+    
+    .skillItemTopic {
+        font-size: 28px;
+    }
+    .skillItem {
+        font-size: 24px;
     }
     
     .portfolioWrapper {
@@ -449,6 +525,10 @@ iframe {
         height: calc(45vw * (2/3));
         max-width: 600px;
         max-height: 400px;
+    }
+    
+    .workText {
+        font-size: 28px;
     }
     
     .socialIcons {
