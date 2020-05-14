@@ -1,0 +1,81 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #363732;
+    width: 100%;
+}
+
+.iframeBody {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    -moz-overflow: hidden;
+}
+
+.constructionHero {
+    width: 100vw;
+    height: 100vh;
+}
+
+.constructionText {
+    position: absolute;
+    background-color: white;
+    left: 0px;
+    bottom: 0px;
+    opacity: 1;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    box-shadow: 0 -3px 5px 0 rgba(55, 54, 50, 0.2);
+    text-align: center;
+    z-index: 1;
+    transition: all 1s ease-out;
+}
+
+.constructionTextShort {
+    opacity: 0;
+    position: absolute;
+    background-color: white;
+    color: #226CE0;
+    border-radius: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+    font-size: 18px;
+    line-height: 30px;
+    min-width: 225px;
+    text-align: center;
+    padding: 10px 25px;
+    box-shadow: 0 4px 6px 0 rgba(55, 54, 50, 0.2);
+    text-decoration: none;
+    z-index: 1;
+    transition: all 0.5s ease-in;
+}
+
+.constructionTextShort:hover {
+    cursor: pointer;
+}
+
+.textLink {
+    text-decoration: none;
+    color: #226CE0;
+}
+
+@media only screen and (min-width: 900px){
+    
+    .constructionText {
+        font-size: 20px;
+    }
+    
+    .constructionTextShort {
+        font-size: 20px;
+    }
+    
+    
+}
