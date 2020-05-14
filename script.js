@@ -36,33 +36,38 @@ function myFunction() {
 
 function toggleOverlay() {
     
-    var url = arguments[0];
-    
-    if(menuToggleSwitch){
-        toggleMenu();
-    }
-    setTimeout(function(){
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         
-    if (overlayToggleSwitch){
-        popupOverlay.style.top = "105vh";
-        popupIframe.src = "";
-        overlayToggleSwitch = 0;
-        document.body.style.overflow = "initial";
+        window.open('./images/Tool%20Services%20Case%20Study.pdf', '_blank', 'fullscreen=yes');
+        
     }
     else {
-        popupOverlay.style.top = "0";
-        popupIframe.src = url;
-        overlayToggleSwitch = 1;
-        document.body.style.overflow = "hidden";
-    }
         
-    }, 200);
+        var url = arguments[0];
+
+        if(menuToggleSwitch){
+            toggleMenu();
+        }
+        setTimeout(function(){
+
+        if (overlayToggleSwitch){
+            popupOverlay.style.top = "105vh";
+            popupIframe.src = "";
+            overlayToggleSwitch = 0;
+            document.body.style.overflow = "initial";
+        }
+        else {
+            popupOverlay.style.top = "0";
+            popupIframe.src = url;
+            overlayToggleSwitch = 1;
+            document.body.style.overflow = "hidden";
+        }
+
+        }, 200);
+        
+    }
     
 }
-
-//function toggleOverlay(){
-//    popupOverlay.style.top = "0";
-//}
 
 function toggleMenu() {
     
