@@ -39,13 +39,15 @@ iframe {
     transition: top 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .popupOverlayNav {
     position: absolute;
     top: 0;
     background-color: white;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+/*    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);*/
     height: 60px;
     width: 100%;
     z-index: 101;
@@ -68,8 +70,9 @@ iframe {
 
 .popupIframe{
     width: 100%;
-    height: calc(100vh - 60px);
-    margin-top: 60px;
+    height: 120vw;
+    max-height: 650px;
+    background-color: white;
 }
 
 .constructionButton {
@@ -359,22 +362,6 @@ iframe {
     margin: 20px;
 }
 
-.lock {
-    position: absolute;
-    transform: translate(-40%, -40%);
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 0 0 10px 0px rgba(54, 54, 50, 0.5);
-    z-index: 10;
-    background-image: url(./images/lock.svg);
-    background-size: 40%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    
-}
-
 .image {
     width: calc(100vw - 80px);
     height: calc((2/3)*(100vw - 80px));
@@ -386,8 +373,8 @@ iframe {
 }
 
 .image:hover {
+    transform: scale(1.05);
     cursor: pointer;
-    transform: scale(1.025);
 }
 
 .productImage {
