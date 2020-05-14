@@ -38,7 +38,7 @@ function toggleOverlay() {
     
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         
-        window.open('./images/Tool%20Services%20Case%20Study.pdf', '_blank', 'fullscreen=yes');
+        window.open('./images/Tool%20Services%20Case%20Study.pdf', '_blank');
         
     }
     else {
