@@ -11,7 +11,7 @@ window.onload = function () {
 }
 
 
-window.onscroll = function() {myFunction()};
+// window.onscroll = function() {myFunction()}; 
 
 var dropMenu = document.getElementById("dropMenu");
 //var menuIcon = document.getElementById("menuIcon");
@@ -23,16 +23,16 @@ var popupIframe = document.getElementById("popupIframe");
 var menuToggleSwitch = 0;
 var overlayToggleSwitch = 0;
 
-function myFunction() {
-    if ( window.pageYOffset > 80 ) {
-        logo.style.backgroundImage = "url('./images/starnesLogo_dark.svg')";
-//        menuIcon.style.backgroundImage = "url('./images/menuIcon_dark.svg')";
-    }
-    else {
-        logo.style.backgroundImage = "url('./images/starnesLogo.svg')";
-//        menuIcon.style.backgroundImage = "url('./images/menuIcon.svg')";
-    }
-}
+// function myFunction() {
+//     if ( window.pageYOffset > 80 ) {
+//         logo.style.backgroundImage = "url('./images/starnesLogo_dark.svg')";
+// //        menuIcon.style.backgroundImage = "url('./images/menuIcon_dark.svg')";
+//     }
+//     else {
+//         logo.style.backgroundImage = "url('./images/starnesLogo.svg')";
+// //        menuIcon.style.backgroundImage = "url('./images/menuIcon.svg')";
+//     }
+// }
 
 function toggleOverlay() {
     

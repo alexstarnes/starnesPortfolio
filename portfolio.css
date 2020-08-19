@@ -1,0 +1,148 @@
+body {
+	margin: 0;
+}
+
+.header {
+    background-color: #226CE0;
+}
+
+.contentWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolioHeader {
+    padding: 20px 40px;
+    max-width: 1400px;
+    /* margin: 0 auto; */
+}
+
+.maxWrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.productOverview {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 40px 0;
+    align-items: center;
+}
+
+.unsetWidth {
+    width: unset;
+}
+
+.productDetails {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 40px 0;
+}
+
+.portfolioExampleImage {
+    width: 100%;
+    margin: 0px 0px 20px;
+}
+
+
+.productName {
+    color: white;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.productDesc {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 300;
+    margin-top: 10px;
+    color: white;
+}
+
+.twoColumns {
+    display: flex;
+    flex-direction: column;
+}
+
+.controlButtons {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+.control {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    padding: 50px 0px;
+    margin: 10px 40px;
+    text-align: center;
+}
+
+#previous {
+    background-color: #226CE0;
+    color: white;
+}
+
+#home {
+    background-color: #F5F5F5;
+}
+
+#next {
+    background-color: #363732;
+    color: white;
+}
+
+@media only screen and (min-width: 760px){
+
+}
+
+@media only screen and (min-width: 900px){
+
+    .portfolioHeader {
+        padding: 40px;
+    }
+
+    .controlButtons {
+        flex-direction: row;
+        margin: 40px 30px;
+    }
+
+    .control {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .twoColumns {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .column {
+        width: calc(50% - 30px);
+    }
+
+    .productName {
+        font-size: 44px;
+        line-height: 50px;
+    }
+
+    .productDesc {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .productOverview {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .overviewText {
+        width: calc(50% - 30px);
+    }
+
+    .portfolioExampleImage {
+        width: calc(50% - 30px);
+    }
+    
+}

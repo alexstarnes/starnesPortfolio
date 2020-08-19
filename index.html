@@ -29,31 +29,36 @@
 </head> 
 <body>
     <div id="splash"></div>
-    <div id="popupOverlay" class="popupOverlay">
+    <!-- <div id="popupOverlay" class="popupOverlay">
         <div class="popupOverlayNav">
             <div onclick="toggleOverlay('');" class="closeOverlayIcon"></div>
         </div>
         <iframe id="popupIframe" src="" class="popupIframe"></iframe>
-    </div>
-    <nav id="topNavBar" class="navbar">
+    </div> -->
+    <nav id="topNavBar" class="navbar mainNav">
         <div class="navMaxWidth">
             <a id="logo" href="./" class="logo"></a>
-<!--            <a id="menuIcon" onclick="toggleMenu();" class="menuIcon"></a>-->
+           <a id="menuIcon" onclick="toggleMenu();" class="menuIcon"></a>
         </div>
     <div id="dropMenu" class="dropMenu">
         <a onclick="toggleMenu();" class="closeIcon"></a>
-        <a class="menuItem" onclick="toggleOverlay('./caseStudy.html');">product design</a>
+        <a class="menuItem" href="./">home</a>  
+        <a class="menuItem" href="./tools.html">portfolio</a>
 <!--        <a class="menuItem" onclick="toggleOverlay('./construction.html');">photography</a>-->
-        <a class="menuItem" onclick="toggleOverlay('./resume.pdf');">resume</a>
+        <a class="menuItem" href="./resume.pdf" target="_blank">resume</a>
       </div>
     </nav>
     <header>
-        <div class="blueBar"></div>
+        <!-- <div class="blueBar"></div> -->
         <div class="intro">
             <div class="picture"></div>
             <div class="introTextWrapper">
                 <div class="helloText">hi, i'm alex starnes</div>
                 <div class="introText">a chicago-based product designer and photographer with an eye for design and a passion for problem solving.</div>
+                <div class="headerButtons">
+                    <a href="./tools.html" class="button primaryButton">see portfolio</a>
+                    <a href="./resume.pdf" target="_blank" class="button secondaryButton">view resume</a>
+                </div>
             </div>
             
         </div>
@@ -65,7 +70,7 @@
             <div class="sectionTitle">about me</div>
             <div class="sectionText">i'm a computer engineer who found what he loves to do at the intersection of people and technology. i find that i truly come alive when working on the toughest of problems where i get to learn how to apply advanced technologies such as virtual reality and machine learning in a human-centered way. 
             </div>
-            <div class="sectionText">in my free time i also love to travel the world and take pictures. photography was where i first felt how powerful mixing creativity with technology could be and i haven’t looked back since.</div>
+            <div class="sectionText bottomElement">in my free time i also love to travel the world and take pictures. photography was where i first felt how powerful mixing creativity with technology could be and i haven’t looked back since.</div>
 <!--            <div class="sectionText">check out some of my work below.</div>-->
             
         </div>
@@ -96,7 +101,7 @@
                     <div class="skillItemTopic">prototyping tools</div>
                     <div class="skillsList">
                         <div class="skillItem">sketch</div>
-                        <div class="skillItem">adobe xd</div>
+                        <div class="skillItem">figma</div>
                         <div class="skillItem">invision</div>
                         <div class="skillItem">html / css / js</div>
                     </div>
@@ -111,8 +116,8 @@
             <div class="portfolioWrapper">
             
                 <div class="workWrapper">
-                    <div class="lock"></div>
-                    <a href="https://invis.io/N5XL9EN39F8" target="_blank" rel="noreferrer">
+                    <!-- <div class="lock"></div> -->
+                    <a href="./tools.html">
                         <div class="image productImage"></div>
                     </a>
                     <div class="workText">product design</div>
