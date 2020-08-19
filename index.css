@@ -244,6 +244,7 @@ iframe {
     line-height: 30px;
     font-weight: 300;
     margin: 20px 40px;
+    text-align: center;
     transition: all 0.2s ease-in;
 }
 
@@ -512,6 +513,10 @@ iframe {
     
     .introTextWrapper {
         align-items: baseline;
+    }
+
+    .introText {
+        text-align: left;
     }
     
     .helloText {
