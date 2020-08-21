@@ -77,16 +77,6 @@ body {
     text-align: center;
 }
 
-.textLink {
-    color: #226CE0;
-    font-weight: 500;
-    transition: all 0.15s ease-in;
-}
-
-.textLink:hover {
-    text-decoration: underline;
-}
-
 #previous {
     background-color: #226CE0;
     color: white;

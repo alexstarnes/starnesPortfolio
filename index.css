@@ -19,6 +19,16 @@ iframe {
     border: none;
 }
 
+.textLink {
+    color: #226CE0;
+    font-weight: 500;
+    transition: all 0.15s ease-in;
+}
+
+.textLink:hover {
+    text-decoration: underline;
+}
+
 #splash {
   position: fixed;
   z-index: 99;
@@ -499,8 +509,14 @@ iframe {
 
 .socialIcons:hover {
 	box-shadow: 0px 0px 8px rgba(54, 55, 50, 0.4);
-	cursor: pointer;
-    
+	cursor: pointer; 
+}
+
+.shoutout {
+    opacity: 0.75;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .copyright {
