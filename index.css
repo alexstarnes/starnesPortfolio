@@ -8,6 +8,7 @@ body {
     color: #363732;
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
 a {
@@ -111,7 +112,6 @@ iframe {
 }
 
 .navbar {
-    /* position: absolute; */
     z-index: 98;
     display: flex;
     justify-content: center;
@@ -175,17 +175,15 @@ iframe {
     display: flex;
     z-index: 100;
     flex-direction: column;
-    position: absolute;
-    margin: 0 auto;
+    position: fixed;
     background-color: white;
-    width: 100%;
-    max-width: 1400px;
+    width: 100vw;
     height: 100vh;
     align-items: center;
     justify-content: center;
-    top: -120vh;
-    box-shadow: 0 0 20px 0 rgba(54, 55, 50, 0.75);
-    transition: all 0.2s ease-in;
+    top: 0;
+    right: -901px;
+    transition: all 0.2s ease-in-out;
 }
 
 .menuItem {
@@ -554,10 +552,6 @@ iframe {
         margin: 20px 40px 0px;
     }
     
-    .dropMenu {
-        height: 400px;
-    }
-    
     .skills {
         flex-direction: row;
         justify-content: space-between;
@@ -590,6 +584,11 @@ iframe {
 }
 
 @media only screen and (min-width: 900px){
+
+    .dropMenu {
+        width: 400px;
+        box-shadow: -2px 0 15px 0 rgba(54, 55, 50, 0.25);
+    }
 
     .button {
             font-size: 28px;

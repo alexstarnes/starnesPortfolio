@@ -72,17 +72,17 @@ function toggleOverlay() {
 function toggleMenu() {
     
     if (menuToggleSwitch == 0) {
-        dropMenu.style.top = "0px";
+        dropMenu.style.right = "0px";
         menuToggleSwitch = 1;
         document.getElementById("splash").style.display = "initial";
-        document.body.style.overflow = "hidden";
+        document.body.style.overflowY = "hidden";
     }
     
     else {
-        dropMenu.style.top = "-120vh";
+        dropMenu.style.right = "-901px";
         menuToggleSwitch = 0;
         document.getElementById("splash").style.display = "none";
-        document.body.style.overflow = "initial";
+        document.body.style.overflowY = "initial";
         
     }
 }
