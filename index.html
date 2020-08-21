@@ -29,12 +29,6 @@
 </head> 
 <body>
     <div id="splash"></div>
-    <!-- <div id="popupOverlay" class="popupOverlay">
-        <div class="popupOverlayNav">
-            <div onclick="toggleOverlay('');" class="closeOverlayIcon"></div>
-        </div>
-        <iframe id="popupIframe" src="" class="popupIframe"></iframe>
-    </div> -->
     <nav id="topNavBar" class="navbar mainNav">
         <div class="navMaxWidth">
             <a id="logo" href="./" class="logo"></a>
@@ -44,12 +38,18 @@
         <a onclick="toggleMenu();" class="closeIcon"></a>
         <a class="menuItem" href="./">home</a>  
         <a class="menuItem" href="./tools.html">portfolio</a>
-<!--        <a class="menuItem" onclick="toggleOverlay('./construction.html');">photography</a>-->
         <a class="menuItem" href="./resume.pdf" target="_blank">resume</a>
+        <div class="socialIconWrapper">
+            
+            <a href="mailto:alex.starnes@gmail.com?subject=Hey Alex, Let's Chat" target="_blank" rel="noreferrer" class="socialIcons email"></a>
+            <a href="https://www.linkedin.com/in/alex-starnes/" target="_blank" rel="noreferrer" class="socialIcons linkedin"></a>
+            <a href="https://dribbble.com/astarnes" target="_blank" rel="noreferrer" class="socialIcons dribbble"></a>
+            <a href="https://medium.com/@alex.starnes" target="_blank" rel="noreferrer" class="socialIcons medium"></a>
+        
+        </div>
       </div>
     </nav>
     <header>
-        <!-- <div class="blueBar"></div> -->
         <div class="intro">
             <div class="picture"></div>
             <div class="introTextWrapper">
@@ -70,8 +70,7 @@
             <div class="sectionTitle">about me</div>
             <div class="sectionText">i'm a computer engineer who found what he loves to do at the intersection of people and technology. i find that i truly come alive when working on the toughest of problems where i get to learn how to apply advanced technologies such as virtual reality and machine learning in a human-centered way. 
             </div>
-            <div class="sectionText bottomElement">in my free time i also love to travel the world and take pictures. photography was where i first felt how powerful mixing creativity with technology could be and i haven’t looked back since.</div>
-<!--            <div class="sectionText">check out some of my work below.</div>-->
+            <div class="sectionText bottomElement">in my free time i also love to travel the world and take pictures. photography was where i first felt how powerful mixing creativity with technology could be and i haven’t looked back since. check out my <a href="https://www.instagram.com/starnescam/" class="invisionLink" target="_blank">instagram</a>!</div>
             
         </div>
         
@@ -120,14 +119,23 @@
                     <a href="./tools.html">
                         <div class="image productImage"></div>
                     </a>
-                    <div class="workText">product design</div>
+                    <div class="workText">some of my design work</div>
+                    <div class="workSubText">being a designer means learning to story-tell</div>
                     
                 </div>
                 <div class="workWrapper">
-                    <a href="https://www.instagram.com/starnescam/" target="_blank" rel="noreferrer">
-                        <div class="image photographyImage"></div>
+                    <a href="https://codepen.io/starnes" target="_blank" rel="noreferrer">
+                        <div class="image codingImage"></div>
                     </a>
-                    <div class="workText">photography</div>    
+                    <div class="workText">a few code mockups</div>    
+                    <div class="workSubText">being a teammate means adjusting your perspective</div>    
+                </div>
+                <div class="workWrapper">
+                    <a href="https://uxplanet.org/hey-can-you-ux-ify-my-website-826e4f884c2" target="_blank" rel="noreferrer">
+                        <div class="image articleImage"></div>
+                    </a>
+                    <div class="workText">a medium article i wrote</div>    
+                    <div class="workSubText">being a leader means sharing what you've learned</div>    
                 </div>
             
             </div>

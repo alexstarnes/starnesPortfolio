@@ -14,7 +14,6 @@ body {
 .portfolioHeader {
     padding: 20px 40px;
     max-width: 1400px;
-    /* margin: 0 auto; */
 }
 
 .maxWrapper {
@@ -41,7 +40,6 @@ body {
 
 .portfolioExampleImage {
     width: 100%;
-    margin: 0px 0px 20px;
 }
 
 
@@ -77,6 +75,16 @@ body {
     padding: 50px 0px;
     margin: 10px 40px;
     text-align: center;
+}
+
+.textLink {
+    color: #226CE0;
+    font-weight: 500;
+    transition: all 0.15s ease-in;
+}
+
+.textLink:hover {
+    text-decoration: underline;
 }
 
 #previous {
@@ -142,7 +150,7 @@ body {
     }
 
     .portfolioExampleImage {
-        width: calc(50% - 30px);
+        width: calc(50% + 30px);
     }
     
 }
