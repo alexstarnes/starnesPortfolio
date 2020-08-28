@@ -272,6 +272,10 @@ iframe {
 
 }
 
+.button:hover {
+    cursor: pointer;
+}
+
 .primaryButton {
     background-color: #226CE0;
     color: white; 

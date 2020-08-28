@@ -34,6 +34,12 @@ var overlayToggleSwitch = 0;
 //     }
 // }
 
+function scrollToPortfolio() {
+    $('html,body').animate({
+        scrollTop: $(".portfolio").offset().top},
+        400);
+}
+
 function toggleOverlay() {
     
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
