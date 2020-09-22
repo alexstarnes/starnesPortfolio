@@ -430,24 +430,24 @@ iframe {
 
 .portfolio {
     width: 100%;
-    padding: 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: unset !important;
-    background-color: rgba(54, 55, 50, 0.05);
 }
 
 .portfolioWrapper {
     width: 100%;
+    max-width: 1220px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .workWrapper {
-    margin: 20px;
+    margin: 5px;
 }
 
 .openInNew {
@@ -463,23 +463,39 @@ iframe {
 }
 
 .image {
-    width: calc(100vw - 80px);
-    height: calc((2/3)*(100vw - 80px));
+    width: calc(100vw);
+    height: calc((2/3)*100vw);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    box-shadow: 0 0 10px rgba(54, 55, 50, 0.25);
-    margin: 0 auto;
+    /* box-shadow: 0 0 10px rgba(54, 55, 50, 0.25); */
+    /* margin: 0 auto; */
     transition: all 0.2s ease-in;
 }
 
 .image:hover {
     cursor: pointer;
-    transform: scale(1.025);
+    /* transform: scale(1.025); */
 }
 
 .productImage {
     background-image: url(./images/design.svg);
+}
+
+.SSImage {
+    background-image: url(./images/SkySim.png);
+}
+
+.AHImage {
+    background-image: url(./images/AutonomyHub.png);
+}
+
+.TSImage {
+    background-image: url(./images/ToolServices.png);
+}
+
+.CVImage {
+    background-image: url(./images/CompVis.png);
 }
 
 .articleImage {
@@ -693,13 +709,13 @@ iframe {
     }
     
     .portfolioWrapper {
-        flex-wrap: nowrap;
+        /* flex-wrap: nowrap; */
         margin-top: 20px;
     }
     
     .image {
-        width: 30vw;
-        height: calc(30vw * (2/3));
+        width: calc(50vw);
+        height: calc((50vw) * (2/3));
         max-width: 600px;
         max-height: 400px;
     }

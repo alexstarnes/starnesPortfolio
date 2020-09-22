@@ -62,6 +62,16 @@ body {
     flex-direction: column;
 }
 
+.additionalImages {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolioImage {
+    width: 100%;
+    margin: 10px 0;
+}
+
 .controlButtons {
     display: flex;
     flex-direction: column;
@@ -99,6 +109,15 @@ body {
 
     .portfolioHeader {
         padding: 40px;
+    }
+
+    .additionalImages {
+
+    }
+
+    .portfolioImage {
+        height: auto;
+        margin: 10px 0px 20px;
     }
 
     .controlButtons {
