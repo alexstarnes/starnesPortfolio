@@ -438,7 +438,7 @@ iframe {
 
 .portfolioWrapper {
     width: 100%;
-    max-width: 1220px;
+    /* max-width: 1440px; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -462,20 +462,34 @@ iframe {
     
 }
 
+.workSplash {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw - 20px);
+    height: calc((3/4)*(100vw - 20px));
+    background-color: rgba(245, 245, 245, 0.75);
+    opacity: 0;
+    transition: all 0.15s ease-in;
+}
+
+.workSplash:hover {
+    opacity: 1;
+}
+
 .image {
-    width: calc(100vw);
-    height: calc((2/3)*100vw);
+    width: calc(100vw - 20px);
+    height: calc((3/4)*(100vw - 20px));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* box-shadow: 0 0 10px rgba(54, 55, 50, 0.25); */
-    /* margin: 0 auto; */
     transition: all 0.2s ease-in;
 }
 
 .image:hover {
     cursor: pointer;
-    /* transform: scale(1.025); */
 }
 
 .productImage {
@@ -510,7 +524,7 @@ iframe {
     text-align: center;
     font-size: 22px;
     line-height: 30px;
-    font-weight: 300;
+    font-weight: 500;
     margin-top: 20px;
     transition: all 0.2s ease-in;
 }
@@ -519,7 +533,7 @@ iframe {
     text-align: center;
     font-size: 18px;
     line-height: 20px;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: 10px;
     transition: all 0.2s ease-in;
 }
@@ -607,6 +621,18 @@ iframe {
     
     .helloText {
         margin: 20px 40px 0px;
+    }
+
+    .workSplash {
+        width: calc(50vw - 15px);
+        height: calc((50vw - 15px) * (3/4));
+    }
+    
+    .image {
+        width: calc(50vw - 15px);
+        height: calc((50vw - 15px) * (3/4));
+        max-width: 785px;
+        max-height: calc(785px * (3/4));
     }
     
     .skills {
@@ -709,19 +735,11 @@ iframe {
     }
     
     .portfolioWrapper {
-        /* flex-wrap: nowrap; */
         margin-top: 20px;
     }
     
-    .image {
-        width: calc(50vw);
-        height: calc((50vw) * (2/3));
-        max-width: 600px;
-        max-height: 400px;
-    }
-    
     .workText {
-        font-size: 24px;
+        font-size: 28px;
     }
     
     .socialIcons {
