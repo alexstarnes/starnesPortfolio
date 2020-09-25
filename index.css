@@ -211,13 +211,24 @@ iframe {
 }
 
 .intro {
-    background-color: #F5F5F5;
+    background-color: rgba(245, 245, 245, 0.75);
     min-height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: all 0.2s ease-in;
-   
+    z-index: 10;
+}
+
+.background {
+    background-image: url(./images/Header.JPG);
+    background-position: 0% 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 75vh;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
 }
 
 .picture {
@@ -286,7 +297,7 @@ iframe {
 }
 
 .secondaryButton:hover {
-    background-color: rgba(54, 55, 50, 0.15);
+    background-color: #f5f5f5;
 }
 
 .mainSection {
