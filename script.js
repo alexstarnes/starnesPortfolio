@@ -3,9 +3,9 @@
 
         setTimeout(function() {
             document.getElementById("splash").style.display = "none";
-        }, 1500);
+        }, 1200);
 
-    }, 500);
+    }, 1000);
 
 // window.onscroll = function() {myFunction()}; 
 
