@@ -1,14 +1,22 @@
-window.onload = function () {
-    
-    document.getElementById("splash").style.opacity = "0";
-    
+
+//  document.getElementById("splash").style.opacity = "0";
+
     setTimeout(function() {
-        document.getElementById("splash").style.display = "none";
-        // document.getElementById("splash").style.opacity = "1";
-        // document.getElementById("splash").style.backgroundColor = "rgba(54, 55, 50, 0.25)";
-    }, 1200);
+        document.getElementById("splash").style.opacity = "0";
+    }, 500);
+
+ 
+
+// window.onload = function () {
     
-}
+    
+//     setTimeout(function() {
+//         document.getElementById("splash").style.display = "none";
+//         // document.getElementById("splash").style.opacity = "1";
+//         // document.getElementById("splash").style.backgroundColor = "rgba(54, 55, 50, 0.25)";
+//     }, 1200);
+    
+// }
 
 
 // window.onscroll = function() {myFunction()}; 
