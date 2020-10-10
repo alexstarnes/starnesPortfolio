@@ -633,13 +633,8 @@ iframe {
     .helloText {
         margin: 20px 40px 0px;
     }
-
-    .workSplash {
-        width: calc(50vw - 15px);
-        height: calc((50vw - 15px) * (3/4));
-    }
     
-    .image {
+    .image, .workSplash {
         width: calc(50vw - 15px);
         height: calc((50vw - 15px) * (3/4));
         max-width: 785px;
